@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activemodel", ">= 5.0.0.a"
   spec.add_dependency "builder", "~> 3.1"
 
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "activerecord", ">= 5.0.0.a"
-  spec.add_development_dependency "sqlite3", "~> 1.3.6"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "activerecord"
+  spec.add_development_dependency "sqlite3"
   spec.add_development_dependency "rexml"
 end
