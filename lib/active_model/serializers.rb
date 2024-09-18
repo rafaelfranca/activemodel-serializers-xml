@@ -14,10 +14,14 @@ module ActiveModel
     eager_autoload do
       autoload :Xml
     end
+
+    module EagerLoading
+      def eager_load!
+        super
+        ActiveModel::Serializers.eager_load!
+      end
+    end
   end
 
-  def self.eager_load!
-    super
-    ActiveModel::Serializers.eager_load!
-  end
+  extend Serializers::EagerLoading
 end
